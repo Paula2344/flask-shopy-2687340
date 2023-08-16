@@ -1,4 +1,5 @@
-from . import db #El punto se reconoce como el archivo "__init__.py" igual el app
+from app import db 
+
 
 #dependencia para fecha y hora
 from datetime import datetime
