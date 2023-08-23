@@ -14,7 +14,10 @@ from flask_migrate import Migrate
 from .mi_blueprint import mi_blueprint
 
 #Importar el modulo 
-from app.products import products
+from app.products import 
+
+#Dependencia de boostrap
+from  flask_bootstrap import Bootstrap
 
 #crear el objeto flask
 app = Flask(__name__)
@@ -31,6 +34,9 @@ app.register_blueprint(products)
 db=SQLAlchemy(app)
 #crear el obejeto de migracion 
 migrate=Migrate(app,db)
+
+#Crear objeto bootstrap
+bootstrap = Bootstrap(app)
 
 #Importar los modelos
 from .models import Cliente,Venta,Detalle,Producto
