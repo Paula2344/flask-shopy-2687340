@@ -14,7 +14,7 @@ from flask_migrate import Migrate
 from .mi_blueprint import mi_blueprint
 
 #Importar el modulo 
-from app.products import 
+from app.products import products
 
 #Dependencia de boostrap
 from  flask_bootstrap import Bootstrap
